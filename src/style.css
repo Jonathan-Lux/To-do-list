@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+body {
+ 
+  background: linear-gradient(#2b0229, rgb(255, 89, 191));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  color: white;
+ 
+}
+
+
+.action {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+ul li {
+  margin-top: 1rem;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+button,
+input {
+  padding: 0.3rem;
+  cursor: pointer;
+
+  
+}
+
+/* modal */
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .addBt{
+   border:none;
+  background-color:rgb(252, 6, 211);
+  color: pink;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.modal-context{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.294);
+  border-radius: 0.4rem;
+}
+
+.hide{
+  display:none
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+.container{
+  max-width: 300px;
+}
+
+  .list{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    
+  }
+
+  ul li{
+    border: none;
+
+  }
+}

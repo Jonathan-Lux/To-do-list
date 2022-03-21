@@ -10,7 +10,11 @@ export function FormList(props) {
 
   function addTextInput(e) {
     e.preventDefault();
-    if (text) {
+    if (text===""){
+      alert("Digite sua tarefa")
+      return
+    } 
+    else{
       props.onAddItemList(text);
       setText("");
     }
